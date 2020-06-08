@@ -1,0 +1,89 @@
+History of C# (Chap 1)
+
+C# offers Power (in the form of object oriented features, generics, and functional programming), its flexible (explicit memory management, excellent type saftey and high quality libraries which allow focus on solving a specific business need without worrying about the low level details) and performance.
+
+.NET includes both the runtime and main class library. The runtime portionn called the CLR (Common Language Runtime) suppports not just C# but the whole suite of languages built for .NET (including C++, Visual Basic, F#, and others). The extensive class library provides wrappers for many features of the underlying operating system as well as collection classes and JSON processing. Both Amazon and Azure include SDK for using C# with their cloud offerings.
+
+C#'s most superficial feature is its C family syntax and its most distinctive feature the native support for the CLR.
+
+While most ccomilers originally producced machine code for a particualr CPU architecture, C sharp uses a model called managed code ( a binary code called the IL Itermediary Language which is used by the CLR). Executab le machine code can be generated JIT (Just In Time) or AoT (Ahead of Time). Compilation can take place using NGen as a post install step, during a build, or crossgen which enables any .NET Core application to use build-time native code generation. 
+
+Prefer Generality to Specialization
+Database features are accessible via LINQ (Language Integrated Query)
+Support for functional programming
+Anonymous type support
+Can add new methods to exeisting types without resorting to inheritance
+
+3 implementation types include .NET Framework, .NET Core and Mono.
+
+CLI or Common Language Infrastructure
+CLS or Common Language Specification
+CTS or Common Type System
+
+Mono adds support first for Linux then later Adnroid and iOS.
+UWP or Universal Windows Platform (became .NET Core)
+
+Proposal is that .NET Core will eventually encompass both .NET Framework and Core in 2020
+
+The project name controls 3 things:
+It sets the names of the .csproj file, it determines the name of the compiled output, and it sets the default namespace for newly created code.
+
+Using statements within classes indicate a concatenated namespace for fields / methods within the class
+Namespace statements follow the using statements identifying the root namespace for all elements of the class. The namespace and the file name are the same
+
+Items in square brackets [] are attributes (annotations of a classes, methods, etc.) Attributes are used by Frameworks
+
+One manner of indicating private field (used only within its own class) by starting the name with an underscore character
+
+Code that lives within methods (Chap 2)
+
+Variable section:
+local variables are named elements inside a methodthat each hold a piece of information.
+
+var type is determined by value in the assignment statement, it was added the same time as the incorporation of anonymous types in C#.
+
+As an example of proper var usage note below when the new statement shows an assignment of type int and var is used so that it doesn't need to be restated
+List<var> stuff = new List<int>()
+Multiple variables of the same type can be initialized on the same line of code. Variables must be initialized before use.
+All variable (and methods, properties, types and anaything else with a name) has scope, which means where is can be addressed by name without requiring additioanl qualification (namespace details).
+Blocks of code are contined (with a few exceptions, ie:looping constructs) within curly brackets {}.
+Code within an external block is local to a nested block
+
+Declaration space: a region of code where a single name cannot refer to more than 1 entity. Each nested coding block or method is it's own delaration space.
+
+Because of multithreading and recursion each variable instance (within a single scope) occupies its own memory space (they don't share a single one).
+Finally methods, classes, and properties have uniqueness, scope, and declaration space.
+
+Statements section:
+declaration statement: where variables (method/properties) are instantiated (declared)
+expression statement: where an algorythm is listed. a grouping of operators and operands. Simplelest expressions are litterals. Method invocations are also an expression. Expressions can contain expressions.
+iterative statement: where a loop is created, procesed, and evalutated
+selection statement: uses an if or switch clause to choose something
+block statement: code contained within curly braces (doesn't have an action / doesn't end in a semicolon)
+
+Comments and Whitespace section:
+White space includes standard space and also tabs / newlines
+// everything here is ignored
+/*
+so is
+all
+of this
+remember comment blocks don't nest
+*/
+
+Directives section:
+includes #define, #undef, #if, #elif, and #endif (also includes #warning, #error, #line, #region, #endregion, and #pragma)
+directives can be applied via conditional attributes like [System.Diagnostics.Conditional("DEBUG")], then following code block is executed only while debugging is one
+
+Data types section:
+Integer numeric types include , byte, signed byte (sbyte), short, int, and long 
+Floating point types include the float and double
+Decimal offers 3rd floating type with the addition of precision
+Numeric types can be explicitly cast using the format: int i1 = (int) 42.0;  // the literal float of 42.0 is cast into 42 and placed into i1
+Implicit casts will only permit some exceptions: int i1 = 42.0; // this is invalid
+checked keyword allows to check for overflow at runtime to throw an overflow exception
+One more "numeric" exists although its a class rather than a type without any practical limit (CPU/MEMORY only)
+
+Non-numeric data tpes include bool (boolean is either true or false never can be a number), char (2 byte single UTF-16 character), and String(s) "type" (actually a class).
+$ (string interpolation) before a string composed of string literals and {susbstiuteherevar} creates a new unmutable string with suitable replacesments made within the curly braces. string.Format can accomplish the same thing within ()'s. last was is literal interpolation with the string contained within a @"StringGoesHere"; (Note verbatim string interpolation can span lines which other methods cannot)
+
