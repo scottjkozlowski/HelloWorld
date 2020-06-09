@@ -5732,19 +5732,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\10034024\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\10034024\\source\\repos\\HelloWorld\\HelloWorld.Tests\\HelloWorld.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\HelloWorld\\HelloWorld.Tests\\HelloWorld.Tests.csproj",
       "projectName": "HelloWorld.Tests",
-      "projectPath": "C:\\Users\\10034024\\source\\repos\\HelloWorld\\HelloWorld.Tests\\HelloWorld.Tests.csproj",
-      "packagesPath": "C:\\Users\\10034024\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\10034024\\source\\repos\\HelloWorld\\HelloWorld.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\HelloWorld\\HelloWorld.Tests\\HelloWorld.Tests.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Source\\Repos\\HelloWorld\\HelloWorld.Tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\10034024\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5752,14 +5756,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "\\\\odhfilesrv01\\omis\\NuGetStore": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\10034024\\source\\repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
-              "projectPath": "C:\\Users\\10034024\\source\\repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj"
+            "C:\\Users\\Admin\\Source\\Repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Source\\Repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj"
             }
           }
         }
@@ -5800,12 +5803,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.2, 3.1.2]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\PROGRAM FILES\\DOTNET\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

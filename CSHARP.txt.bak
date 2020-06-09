@@ -6,7 +6,7 @@ C# offers Power (in the form of object oriented features, generics, and function
 
 C#'s most superficial feature is its C family syntax and its most distinctive feature the native support for the CLR.
 
-While most ccomilers originally producced machine code for a particualr CPU architecture, C sharp uses a model called managed code ( a binary code called the IL Itermediary Language which is used by the CLR). Executable machine code can be generated JIT (Just In Time) or AoT (Ahead of Time). Compilation can take place using NGen as a post install step, during a build, or crossgen which enables any .NET Core application to use build-time native code generation. 
+While most ccomilers originally producced machine code for a particualr CPU architecture, C sharp uses a model called managed code ( a binary code called the IL Itermediary Language which is used by the CLR). Executab le machine code can be generated JIT (Just In Time) or AoT (Ahead of Time). Compilation can take place using NGen as a post install step, during a build, or crossgen which enables any .NET Core application to use build-time native code generation. 
 
 Prefer Generality to Specialization
 Database features are accessible via LINQ (Language Integrated Query)
