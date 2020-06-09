@@ -6,7 +6,7 @@ C# offers Power (in the form of object oriented features, generics, and function
 
 C#'s most superficial feature is its C family syntax and its most distinctive feature the native support for the CLR.
 
-While most ccomilers originally producced machine code for a particualr CPU architecture, C sharp uses a model called managed code ( a binary code called the IL Itermediary Language which is used by the CLR). Executab le machine code can be generated JIT (Just In Time) or AoT (Ahead of Time). Compilation can take place using NGen as a post install step, during a build, or crossgen which enables any .NET Core application to use build-time native code generation. 
+While most ccomilers originally producced machine code for a particualr CPU architecture, C sharp uses a model called managed code ( a binary code called the IL Itermediary Language which is used by the CLR). Executable machine code can be generated JIT (Just In Time) or AoT (Ahead of Time). Compilation can take place using NGen as a post install step, during a build, or crossgen which enables any .NET Core application to use build-time native code generation. 
 
 Prefer Generality to Specialization
 Database features are accessible via LINQ (Language Integrated Query)
@@ -86,4 +86,5 @@ One more "numeric" exists although its a class rather than a type without any pr
 
 Non-numeric data tpes include bool (boolean is either true or false never can be a number), char (2 byte single UTF-16 character), and String(s) "type" (actually a class).
 $ (string interpolation) before a string composed of string literals and {susbstiuteherevar} creates a new unmutable string with suitable replacesments made within the curly braces. string.Format can accomplish the same thing within ()'s. last was is literal interpolation with the string contained within a @"StringGoesHere"; (Note verbatim string interpolation can span lines which other methods cannot)
-
+Within string body and further within curly braces complex expressions can be incorporated such as calculations or method calls which return values.
+String interpolation, with its various forms, primary benefit is readable clarity of code.
