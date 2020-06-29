@@ -44,9 +44,11 @@ One manner of indicating private field (used only within its own class) by start
 Code that lives within methods (Chap 2)
 
 Variable section:
-local variables are named elements inside a method that each hold a piece of information.
+local variables are named elements inside a method that each hold a piece of information which must start with a letter or an underscore (following charactes in name can also include decimal digits). Variables include fields in objects and array elements. Multiple variables of the same type can be created on a single line of code with the names seperated by commas. The type a variable declared as also affects how some operators interact with them. An example is the plus operator "+" which concatonates strings together and changes appended types to strings prior to concatenation. Variables must be assigned an initial value prior to further use.
 
-var type is determined by value in the assignment statement, it was added the same time as the incorporation of anonymous types in C#.
+var type is determined by value in the assignment statement, it was added the same time as the incorporation of anonymous types in C#. Var type variables are still statically typed unlike other languages with dynamic types. A potentially useful application of the VAR type is where is saves repetion of code. For example, "List<var> numbers = new List<int>();" used in place of "List<int> = new List<int>();" where int is stated twice for the same list object.
+
+All variables have scope, a boundry of use based upon where a variable is declared in code. The scoped boundry starts at the variables declaration and ends at the current code block termination.
 
 As an example of proper var usage note below when the new statement shows an assignment of type int and var is used so that it doesn't need to be restated
 List<var> stuff = new List<int>()

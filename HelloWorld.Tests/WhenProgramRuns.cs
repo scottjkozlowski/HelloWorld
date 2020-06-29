@@ -22,7 +22,7 @@ namespace HelloWorld.Tests
         [TestMethod]
         public void SaysHelloWorld()
         {
-            var ValueConsole = "Hypotenuse: 5.0000";
+            var ValueConsole = "1";
 
             Assert.AreEqual(ValueConsole, _consoleOutput);
         }

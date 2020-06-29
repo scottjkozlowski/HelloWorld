@@ -5,14 +5,16 @@ namespace HelloWorld
 {
     public class Program
     {
-        
-
         public static void Main(string[] args)
         {
+            int someValue = 101;
+            if (someValue > 100)
+            {
+                int anotherValue = someValue - 100; //Compiler error
+                Console.WriteLine(anotherValue);
+            }
 
-            double width = 3, height = 4;
-            string info = $"Hypotenuse: {Math.Sqrt(width * width + height * height):f4}";
-            Console.WriteLine(info);
+            //int anotherValue = 123;
         }
     }
 }
