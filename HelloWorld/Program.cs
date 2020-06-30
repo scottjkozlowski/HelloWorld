@@ -13,7 +13,8 @@ namespace HelloWorld
                 int anotherValue = someValue - 100; //Compiler error
                 Console.WriteLine(anotherValue);
             }
-
+            MyClass a = new MyClass();
+            a.Show();
             //int anotherValue = 123;
         }
     }

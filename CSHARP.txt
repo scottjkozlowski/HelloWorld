@@ -63,6 +63,7 @@ Because of multithreading and recursion each variable instance (within a single 
 Finally methods, classes, and properties have uniqueness, scope, and declaration space.
 
 Statements section:
+A statement is a group of directions for a method or class for a program to act on.
 declaration statement: where variables (method/properties) are instantiated (declared)
 expression statement: where an algorythm is listed. a grouping of operators and operands. Simplelest expressions are litterals. Method invocations are also an expression. Expressions can contain expressions.
 iterative statement: where a loop is created, procesed, and evalutated
