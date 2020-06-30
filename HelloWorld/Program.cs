@@ -15,6 +15,8 @@ namespace HelloWorld
             }
             MyClass a = new MyClass();
             a.Show();
+            string AString = Console.ReadKey().KeyChar + "!";
+            Console.WriteLine(Environment.NewLine + AString);
             //int anotherValue = 123;
         }
     }
