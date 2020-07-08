@@ -8,10 +8,12 @@ namespace HelloWorld
     {
         public void Show()
         {
-            int x = 100;
+            bool x = true;
             int y = 200;
+            int z = (int)120.0;
             Console.WriteLine(x);
             Console.WriteLine(y);
+            Console.WriteLine(z);
         }
 
     }
